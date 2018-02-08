@@ -1,0 +1,184 @@
+
+@media screen and (max-width: 980px) {
+
+    #main_content .grid_1,
+    #main_content .grid_2,
+    #main_content .grid_3,
+    #main_content .grid_3b,
+    #main_content .grid_4,
+    #main_content .grid_5,
+    #main_content .grid_6,
+    #main_content .grid_7,
+    #main_content .grid_7b,
+    #main_content .grid_8,
+    #main_content .grid_8b,
+    #main_content .grid_9,
+    #main_content .grid_10,
+    #main_content .grid_10b,
+    #main_content .grid_11,
+    #main_content .grid_11b,
+    #main_content .grid_12,
+    #main_content .grid_13,
+    #main_content .grid_13b,
+    #main_content .grid_14,
+    #main_content .grid_15,
+    #main_content .grid_16,
+    #main_content .grid_16b {
+        display: inline-block;
+        float: left;
+        width: auto;
+        margin: 0 1% 0 1%;
+        padding: 15px;
+    }
+
+    #main_content .cont {
+        display: block;
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    #main_content .cont .grid_1 {
+        width: 4.25%;
+    }
+
+    #main_content .cont .grid_2 {
+        width: 10.5%;
+    }
+
+    #main_content .cont .grid_3 {
+        width: 16.75%;
+    }
+
+    #main_content .cont .grid_4 {
+        width: 23%;
+    }
+
+    #main_content .cont .grid_4b {
+        width: 25%
+    }
+
+    #main_content .cont .grid_5 {
+        width: 29.25%;
+    }
+
+    #main_content .cont .grid_6 {
+        width: 35.5%;
+    }
+
+    #main_content .cont .grid_7 {
+        width: 41.75%;
+    }
+
+    #main_content .cont .grid_8 {
+        width: 48%;
+    }
+
+    #main_content .cont .grid_9 {
+        width: 54.25%;
+    }
+
+    #main_content .cont .grid_10 {
+        width: 60.5%;
+    }
+
+    #main_content .cont .grid_10b {
+        width: 62.5%;
+    }
+
+    #main_content .cont .grid_11 {
+        width: 66.75%;
+    }
+
+    #main_content .cont .grid_12 {
+        width: 73%;
+    }
+
+    #main_content .cont .grid_13 {
+        width: 79.25%;
+    }
+
+    #main_content .cont .grid_14 {
+        width: 85.5%;
+    }
+
+    #main_content .cont .grid_15 {
+        width: 91.75%;
+    }
+
+    #main_content .cont .grid_16 {
+        width: 98%;
+    }
+
+    #main_content .cont .grid_16b {
+        width: 100%;
+    }
+
+    #main_content .cont .no-margin {
+        margin: 0;
+    }
+
+    #main_content .push_1, 
+    #main_content .push_1_1, 
+    #main_content .push_1_2,  .pull_1,
+    #main_content .push_2,    .pull_2,
+    #main_content .push_3,    .pull_3,
+    #main_content .push_4,    .pull_4,
+    #main_content .push_5,    .pull_5,
+    #main_content .push_6,    .pull_6,
+    #main_content .push_7,    .pull_7,
+    #main_content .push_8,    .pull_8,
+    #main_content .push_9,    .pull_9,
+    #main_content .push_10,   .pull_10,
+    #main_content .push_11,   .pull_11,
+    #main_content .push_12,   .pull_12,
+    #main_content .push_13,   .pull_13,
+    #main_content .push_14,   .pull_14,
+    #main_content .push_15,   .pull_15,
+    #main_content .push_16,   .pull_16 {
+        left: 0;
+    }
+
+    #main_content .push_6 {
+        left: 36.5%;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+    #main_content .cont .grid_1,
+    #main_content .cont .grid_2,
+    #main_content .cont .grid_3,
+    #main_content .cont .grid_3b,
+    #main_content .cont .grid_4,
+    #main_content .cont .grid_5,
+    #main_content .cont .grid_6,
+    #main_content .cont .grid_7,
+    #main_content .cont .grid_7b,
+    #main_content .cont .grid_8,
+    #main_content .cont .grid_8b,
+    #main_content .cont .grid_9,
+    #main_content .cont .grid_10,
+    #main_content .cont .grid_10b,
+    #main_content .cont .grid_11,
+    #main_content .cont .grid_11b,
+    #main_content .cont .grid_12,
+    #main_content .cont .grid_13,
+    #main_content .cont .grid_13b,
+    #main_content .cont .grid_14,
+    #main_content .cont .grid_15,
+    #main_content .cont .grid_16,
+    #main_content .cont .grid_16b {
+        display: inline;
+        float: left;
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #main_content .push_6 {
+        left: 0%;
+    }
+}
