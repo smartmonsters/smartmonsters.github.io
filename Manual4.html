@@ -167,16 +167,18 @@
 
             <h1><br>Windows Qt-Client</h1>
 
-<p><a href="https://mega.nz/#!jR4UnKIT!OnaHmyxn8e4Bgl6tjgcUIs-XaL0UkHv-NDvfucXn3DI">SmartMonsters-alpha2-2.2.03-20180214.zip</a></p>
+<p><a href="https://mega.nz/#!HFxXwYQL!fNL_VyYUqVKttuNMniqkyKviXjiccaXJwHlODm6Boqg">SmartMonsters-alpha2-2.2.04-20180301.zip</a></p>
 
 <p>Default data folder on Windows is "...\<i>username</i>\AppData\Roaming\SmartMonsters\testnet_alpha2".</p>
 
-<p>When upgrading from previous build (alpha2-2.2.03-20180210), delete "game.dat" to force replaying the blockchain.</p>
+<p>When upgrading from alpha2-2.2.03-20180210 or an earlier build, delete "game.dat" to force replaying the blockchain.</p>
+
 
             <h1><br>Testnet-in-a-box</h1>
 
-<p>SmartMonsters-TiaB-2.2.03-20180214.zip<br>
-https://mega.nz/#!WBZXWSgJ!qkiIEwkkhKPMaOsw-Yzrz-PNz4OKbLBvGj532Om-sn4</p>
+<p>SmartMonsters-TiaB-2.2.04-20180301.zip<br>
+https://mega.nz/#!7Rp0mIBT!wL5UcbaxU5tP9xrU-JKNZlnZl0fWywPs1pmaItHEUFM</p>
+
 <p>Can be used to import any backup of the (online) smartmonsters alpha testnet blockchain, for the purpose of bug hunting.</p>
 
 
@@ -206,40 +208,33 @@ path to and from battlefield areas.</span>
 <br></ul>
 
 
-            <h1 id="Wishlist"><br>Wishlist</h1>
+            <h1><br>Changelog (v2.2.04)</h1>
 
-            <p><b>Trustless, decentralised trading</b></p>
+<br><ul><li><span style="line-height:180%">Resurrected monsters start in their color's base instead of a semi-random harvest area.</span>
+<li><span style="line-height:180%">Four "Starting Zones" for low level characters have been created near the map borders, equally distant to color bases.
+Everyone can enter, but higher level chars will be temporarily reduced to level 3.</span>
+<li><span style="line-height:180%">Arbalests have always a strength of 2, and a range of 4 tiles if wielded by level 3 characters.</span>
+<li><span style="line-height:180%">Fix: if characters are fleeing, their AI will no longer randomly decide to go after coins.</span>
+<br></ul>
 
-<p>A special state ("Trader") for player characters in which they:
-<br><ul><li><span style="line-height:180%">Can't leave safe zones and thus can't die.</span>
-<li><span style="line-height:180%">Can send/receive looted coins to/from other players.</span>
+
+            <h1 id="Wishlist"><br>Short-term wish list (v2.2.05)</h1>
+
+<p>Map related bugfixes:
+<br><ul><li><span style="line-height:180%">Fix algorithm to automatically generate the Obstacle Map from visual data.</span>
+<li><span style="line-height:180%">Improve positions for merchant NPCs that currently stand in the way of typical player paths.</span>
+<li><span style="line-height:180%">Fix remaining unreachable coins. Generally some small coins areas should have more walkable tiles.</span>
+<li><span style="line-height:180%">Unblock south exit of the center "marketplace" (need manual editing).</span>
 <br></ul></p>
-<p>And another state ("Broker") for player characters in which they additionally:
-<br><ul><li><span style="line-height:180%">Must maintain a minimum amount of looted coins as collateral. The voting system can take these coins away.</span>
+
+<p>Beta test starts with version 2.2.05:
+<br><ul><li><span style="line-height:180%">Beta test will be a new blockchain, different from alpha test.</span>
+<li><span style="line-height:180%">Allow beta testers to win prizes: tokens convertible into mainnet coins later.</span>
+<li><span style="line-height:180%">Improve dynamic checkpoint system. (it's still only a testnet and can't be secured otherwise)</span>
+<li><span style="line-height:180%">Public announement and giveaway before beta test begins. Beta competition prizes and giveaway packages should be interchangeable and of standardized size.</span>
+<li><span style="line-height:180%">This manual needs a better "How to start playing" section with pictures.</span>
 <br></ul></p>
 
-<p>Now decentralised trading of coins can be made trustless without something like the complicated 2-of-3 multigateway that was once used to trade Nxt against BTC.
-A simple (1-of-1) gateway would be sufficient because whoever operates it is on the hook with all collateralized coins.</p>
-
-<p>Trustless trading of levelled characters between players can be automated within the client.</p>
-
-            <p><br><b>CPU optimisation</b></p>
-
-<p>Characters who are on the run due to failed morale check must only try to change retreat target every block if their tactical situation would get worse otherwise.</p>
-
-<p>No need to count votes every block.</p>
-
-            <p><br><b>Better map</b></p>
-
-<p>Increase number of coin spawning areas to accommodate more players. Split large areas that have coins more than 10-12 tiles away from their flag marker.</p>
-
-<p>Map connectivity: dead ends are a bad thing, even large ones (several areas). Need "beta competition" for real coins to actually test this.</p>
-
-            <p><br><b>Code base</b></p>
-
-<p>Client forked from newest Huntercore instead of an old version of Huntercoin.</p>
-
-<p>New gamestate with reserve fields, for the game itself, for each player, each character, and (like "destruct") the moves, in preparation for changes during beta test.</p>
 
 
 		</div>
