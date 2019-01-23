@@ -123,7 +123,7 @@
 				<ul class="sub">
 				
 			<li class=""><a href="Manual5.html#Unicode symbols"><span>Mapview Notation</span></a></li>
-				<li class=""><a href="Manual5.html#Synonyms"><span>Huntercoin-ish vocabulary</a></li>
+				<li class=""><a href="Manual5.html#Synonyms"><span>Vocabulary</a></li>
 	
 				</ul>
 			</li>
@@ -167,37 +167,34 @@
 
             <h1><br>Windows Qt-Client</h1>
 
-<p><a href="https://mega.nz/#!HFxXwYQL!fNL_VyYUqVKttuNMniqkyKviXjiccaXJwHlODm6Boqg">SmartMonsters-alpha2-2.2.04-20180301.zip</a></p>
+<p><a href="https://mega.nz/#!edpElKhL!IKmCsdkWfpB9D1A45DU51i4TzV037OSZsDyrXomp2jQ">SmartMonsters-beta-2.2.05-20190122.zip</a></p>
 
-<p>Default data folder on Windows is "...\<i>username</i>\AppData\Roaming\SmartMonsters\testnet_alpha2".</p>
+<p>In order to use the shortcuts, extract the folder "smartmonsters" to C:\ so that the executable is at C:\smartmonsters\smartmonsters-qt.exe</p>
 
-<p>When upgrading from alpha2-2.2.03-20180210 or an earlier build, delete "game.dat" to force replaying the blockchain.</p>
+<p>If started normally, it will <a href="Manual1.html">connect to the online beta testnet</a>.</p>
 
 
             <h1><br>Testnet-in-a-box</h1>
 
-<p>SmartMonsters-TiaB-2.2.04-20180301.zip<br>
-https://mega.nz/#!7Rp0mIBT!wL5UcbaxU5tP9xrU-JKNZlnZl0fWywPs1pmaItHEUFM</p>
+<p>A TiaB is included in the Windows Qt-Client.</p>
 
-<p>Can be used to import any backup of the (online) smartmonsters alpha testnet blockchain, for the purpose of bug hunting.</p>
+<p>To create a local testnet-in-a-box, use one of the "offline - node1 ..." shortcuts and one of the "offline - node2 ...". The "generate" versions start with activated CPU miner.</p>
 
 
             <h1><br>Source</h1>
 
-<p><a href="https://github.com/smartmonsters/smartmonsters-alpha">https://github.com/smartmonsters/smartmonsters-alpha</a></p>
+<p><a href="https://github.com/smartmonsters">https://github.com/smartmonsters</a></p>
 
 
             <h1 id="POW"><br>POW mining for testnet</h1>
 
-<p>As in Huntercoin, about 80 percent of all coins are mined by the game, 20 percent through POW mining.</p>
+<p>About 80 percent of all coins are mined by the game, 20 percent through POW mining.</p>
 
 <p>Testnet POW mining can be done from within the Qt-client: in Debug Window, use "setgenerate true" to start mining, and "setgenerate false" to stop. To switch from default algo sha256 to scrypt, put "algo=scrypt" in smartmonsters.conf.
 POW mining is needed to generate blocks, the game can't do this, even if it generates most of the coins.</p>
 
-<p>Note that default smartmonsters.conf ("algo=scrypt" and "gen=1") starts the scrypt POW miner. It will mostly idle though, generating coins slowly.</p>
 
-
-            <h1 id="Changelog"><br>Changelog (v2.2.03)</h1>
+            <h1 id="Changelog"><br>Changelog (v2.2.03alpha)</h1>
 
 <br><ul><li><span style="line-height:180%">Starting with version 2.2.03, when new versions contain any change (or bugfix) that constitutes an hardfork, this change will be dormant until <a href="Manual3.html#Voting2">activated by the voting system</a>.</span>
 <li><span style="line-height:180%">Players saved by their Amulet or Ring of Life Saving go into vacation mode instead of being teleported to their color's base.
@@ -208,7 +205,7 @@ path to and from battlefield areas.</span>
 <br></ul>
 
 
-            <h1><br>Changelog (v2.2.04)</h1>
+            <h1><br>Changelog (v2.2.04alpha)</h1>
 
 <br><ul><li><span style="line-height:180%">Resurrected monsters start in their color's base instead of a semi-random harvest area.</span>
 <li><span style="line-height:180%">Four "Starting Zones" for low level characters have been created near the map borders, equally distant to color bases.
@@ -218,23 +215,28 @@ Everyone can enter, but higher level chars will be temporarily reduced to level 
 <br></ul>
 
 
-            <h1 id="Wishlist"><br>Short-term wish list (v2.2.05)</h1>
+            <h1><br>Changelog (v2.2.05beta)</h1>
 
-<p>Map related bugfixes:
-<br><ul><li><span style="line-height:180%">Fix algorithm to automatically generate the Obstacle Map from visual data.</span>
-<li><span style="line-height:180%">Improve positions for merchant NPCs that currently stand in the way of typical player paths.</span>
-<li><span style="line-height:180%">Fix remaining unreachable coins. Generally some small coins areas should have more walkable tiles.</span>
-<li><span style="line-height:180%">Unblock south exit of the center "marketplace" (need manual editing).</span>
+<p>Beta testnet is a different chain than alpha testnet.
+<br><ul><li><span style="line-height:180%">Fixed algorithm to automatically generate the Obstacle Map from visual data.</span>
+<li><span style="line-height:180%">Merchant NPCs no longer stand in the way of typical player paths.</span>
+<li><span style="line-height:180%">Fixed remaining unreachable coins.</span>
+<li><span style="line-height:180%">South exit of the center "marketplace" is now open.</span>
+<li><span style="line-height:180%">Locked coin amount when creating a new player character now depends on block height, going down every 10000 blocks from 100 coins at block 0-10000 to 20 coins at block 50000.</span>
 <br></ul></p>
 
-<p>Beta test starts with version 2.2.05:
-<br><ul><li><span style="line-height:180%">Beta test will be a new blockchain, different from alpha test.</span>
-<li><span style="line-height:180%">Allow beta testers to win prizes: tokens convertible into mainnet coins later.</span>
-<li><span style="line-height:180%">Improve dynamic checkpoint system. (it's still only a testnet and can't be secured otherwise)</span>
-<li><span style="line-height:180%">Public announement and giveaway before beta test begins. Beta competition prizes and giveaway packages should be interchangeable and of standardized size.</span>
-<li><span style="line-height:180%">This manual needs a better "How to start playing" section with pictures.</span>
-<br></ul></p>
 
+            <h1 id="Wishlist"><br>Wishlist</h1>
+
+<p>Map size is the bottleneck limiting the number of players. It must become larger without increasing the memory footprint.</p>
+
+<p>Map connectivity, and also weapon and item effects are still mostly "random" and need balancing through open playtesting.</p>
+
+<p>The game need more items without making the learning curve for players even steeper.</p>
+
+<p>Game client's blockchain and network related functions must migrate from current code base to that of the newest bitcoin version.</p>
+
+<p>Current artwork is mostly placeholders, and the name "Smartmonsters" is perhaps not perfect...</p>
 
 
 		</div>
