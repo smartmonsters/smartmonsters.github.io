@@ -168,24 +168,95 @@
 
             <h1 id="Weapons"><br>Weapons</h1>
 
-<p>Characters use their weapons automatically, and will never fumble or miss.<br>
-Weapon effects can be resisted, in this case they do no damage.<br>
-If not resisted, all weapons are lethal. There are no hitpoints.</p>
+<p>Player characters start out with a dagger and can buy one additional weapon by running over the tile of a merchant NPC.</p>
+
+<p>Characters use their weapons automatically, and will never fumble or miss. Weapon effects can be <a href="Manual2.html#Armor"><span>resisted</span></a>, in this case they do no damage. If not resisted, all weapons are immediately lethal.</p><p></p>
+
 <table>
-<tr valign="top"><th width="200"><span style="line-height:180%">    </span></th><th width="100">effect</th><th width="100">range(***)</th><th width="100">strength(**)</th><th width="100">affected tiles</th><th width="100">min. clevel to use</th></tr>
-<tr><td><span style="line-height:180%">Staff of Poison Cloud</span></td><td>poison</td><td>clevel</td><td>clevel-distance</td><td>several</td><td>2</td></tr>
-<tr><td><span style="line-height:180%">Staff of Fire Balls</span></td><td>fire<td>clevel</td><td>clevel</td><td>1</td><td>2</td></tr>
-<tr><td><span style="line-height:180%">Staff of the Reaper</span></td><td>death</td><td>clevel</td><td>clevel</td><td>several</td><td>2</td></tr>
-<tr><td><span style="line-height:180%">Dagger (default weapon)</span></td><td>death</td><td>1</td><td>1</td><td>several</td><td>1</td></tr>
-<tr><td><span style="line-height:180%">Arming Sword</span></td><td>death</td><td>1</td><td>min(2,clevel)</td><td>several</td><td>2</td></tr>
-<tr><td><span style="line-height:180%">Estoc</span></td><td>death</td><td>1</td><td>clevel</td><td>several</td><td>2</td></tr>
-<tr><td><span style="line-height:180%">Crossbow</span></td><td>death</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-<tr><td><span style="line-height:180%">Arbalest</span></td><td>death</td><td>3</td><td>1</td><td>1</td><td>2</td></tr>
-<tr><td><span style="line-height:180%">Staff of Chain Lightning</span></td><td>lightning</td><td>clevel</td><td>1</td><td>1 (*)</td><td>2</td></tr>
+<tr valign="top"><th width="200"><span style="line-height:180%">    </span></th><th width="80">Icon</th><th width="100">Damage Type</th><th width="100">Range(***)</th><th width="100">Strength(**)</th><th width="100">Affected tiles</th><th width="100">Min. <a href="Manual2.html#Clevels"><span>clevel</span></a> to use</th></tr>
+<tr><td><span style="line-height:180%">Staff of Poison Cloud</span></td><td><img src="Manual_files/270_poison.png" alt=""></td><td>poison</td><td>clevel</td><td>clevel-distance</td><td>several</td><td>2</td></tr>
+<tr><td><span style="line-height:180%">Staff of Fire Balls</span></td><td><img src="Manual_files/269_fire.png" alt=""></td><td>fire<td>clevel</td><td>clevel</td><td>1</td><td>2</td></tr>
+<tr><td><span style="line-height:180%">Staff of the Reaper</span></td><td><img src="Manual_files/308_reaper.png" alt=""></td><td>normal</td><td>clevel</td><td>clevel</td><td>several</td><td>2</td></tr>
+<tr><td><span style="line-height:180%">Dagger (default weapon)</span></td><td><img src="Manual_files/278_dagger.png" alt=""></td><td>normal</td><td>1</td><td>1</td><td>several</td><td>1</td></tr>
+<tr><td><span style="line-height:180%">Arming Sword</span></td><td><img src="Manual_files/509_sword.png" alt=""></td><td>normal</td><td>1</td><td>min(2,clevel)</td><td>several</td><td>2</td></tr>
+<tr><td><span style="line-height:180%">Estoc</span></td><td><img src="Manual_files/507_estoc.png" alt=""></td><td>normal</td><td>1</td><td>clevel</td><td>several</td><td>2</td></tr>
+<tr><td><span style="line-height:180%">Crossbow</span></td><td><img src="Manual_files/275_xbow.png" alt=""></td><td>normal</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td><span style="line-height:180%">Arbalest</span></td><td><img src="Manual_files/510_arbalest.png" alt=""></td><td>normal</td><td>3</td><td>1</td><td>1</td><td>2</td></tr>
+<tr><td><span style="line-height:180%">Staff of Chain Lightning</span></td><td><img src="Manual_files/307_lightning.png" alt=""></td><td>lightning</td><td>clevel</td><td>1</td><td>1 (*)</td><td>2</td></tr>
 </table>
 <p>(*) resisted if target is wearing plate mail, but otherwise everyone on adjacent tiles (of the target) get zapped too.<br>
 (**) maximum 3<br>
 (***) maximum 7</p>
+
+
+
+            <h1 id="Items"><br>Items</h1>
+
+<p>Player characters can have equipped items that determine their combat abilities.
+ Equipment can be bought by running over the tile of a merchant NPC.</p>
+
+            <h4 id="Armor"><br>Armor</h4>
+
+<p>All armor types resist damage if the wearer's character level is greater than the attack strength AND attack strength is less than 3.
+As a rule of thumb, attack strength is never higher than the attacker's character level.</p>
+
+<p></p>
+
+<table>
+<tr valign="top"><th width="200"><span style="line-height:180%">    </span></th><th width="80">    </th><th width="550">    </th></tr>
+<tr><td><span style="line-height:180%">Buff Coat</span></td><td><img src="Manual_files/344_buffcoat.png" alt=""></td><td>
+                                       Effective against normal damage, but only if attack strength is 1,<br>and not against lightning, poison and fire.<br>
+                                       No range penalty when using staves.</td></tr>
+<tr><td><span style="line-height:180%">Linen Body Armor</span></td><td><img src="Manual_files/513_linen.png" alt=""></td><td>
+                                       Effective against normal damage<br>but not against lightning, poison and fire.<br>
+                                       -1 range penalty when using staves.</td></tr>
+<tr><td><span style="line-height:180%">Scale Mail</span></td><td><img src="Manual_files/515_scale.png" alt=""></td><td>
+                                       Effective against normal damage and poison<br>but not against lightning and fire.<br>
+                                       -1 range penalty when using staves.</td></tr>
+<tr><td><span style="line-height:180%">Splinted Mail</span></td><td><img src="Manual_files/306_splinted.png" alt=""></td><td>
+                                       Effective against normal damage, poison and fire<br>but not against lightning.<br>
+                                       -2 range penalty when using staves.</td></tr>
+<tr><td><span style="line-height:180%">Plate Mail</span></td><td><img src="Manual_files/514_plate.png" alt=""></td><td>
+                                       Effective against all types of damage.<br>
+                                       -2 range penalty when using staves.</td></tr>
+</table>
+
+            <h4 id="Amulets"><br>Amulets</h4>
+
+<p></p>
+
+<table>
+<tr valign="top"><td width="200"><span style="line-height:180%">Amulet of Word of Recall</span></td><td width="80"><img src="Manual_files/273_recall.png" alt=""></td><td width="470">teleport to base, if failing morale check for 25 consecutive blocks (being chased by strong monster)</td></tr>
+<tr><td><span style="line-height:180%">Amulet of Life Saving</span></td><td><img src="Manual_files/272_ankh.png" alt=""></td><td>teleport to base *instead* of death<br>
+                                       this will destroy the amulet</td></tr>
+<tr><td><span style="line-height:180%">Amulet of Regeneration</span></td><td><img src="Manual_files/274_regen.png" alt=""></td><td>If the wearer is converted into a monster, it will slowly regenerate and become a normal PC again,
+                                       (this process is halted when less than 1/3 of all characters are monsters)</td></tr>
+</table>
+
+            <h4 id="Rings"><br>Rings</h4>
+
+<p></p>
+
+<table>
+<tr valign="top"><td width="200"><span style="line-height:180%">Ring of Word of Recall</span></td><td width="80"><img src="Manual_files/273_recall.png" alt=""></td><td width="470">teleport to base, if failing morale check for 25 consecutive blocks (being chased by strong monster)</td></tr>
+<tr><td><span style="line-height:180%">Ring of Immortality</span></td><td><img src="Manual_files/272_ankh.png" alt=""></td><td>teleport to base *instead* of death<br>
+                                       the ring is then automatically rebought, without discount</td></tr>
+</table>
+
+
+
+            <h1 id="Spells"><br>AI + spell packages (free items)</h1>
+
+<table>
+<tr valign="top"><td width="200"><span style="line-height:180%">Book of Conquest</span></td><td width="80"><img src="Manual_files/455_conquest.png" alt=""></td><td width="470">Standard setting for passing/failing morale check</td></tr>
+<tr><td><span style="line-height:180%">Book of Survival</span></td><td><img src="Manual_files/456_survival.png" alt=""></td><td>Less overconfidence. Run away to fight another day</td></tr>
+<tr><td><span style="line-height:180%">Book of Resting</span></td><td><img src="Manual_files/454_resting.png" alt=""></td><td>like Book of Survival, additionally recall to base if no order for new round was given</td></tr>
+<tr><td><span style="line-height:180%">Book of Mark and Recall</span></td><td><img src="Manual_files/457_markrecall.png" alt=""></td><td>like Book of Resting, additionally:<br>
+                                       Memorize where you have been (the area). When order for new round was given,
+                                       teleport there, then walk to ordered target area.
+                                       (for teleportation, the area's marker flag must be same color, or white)</td></tr>
+</table>
+
 
 
             <h1 id="Monsters"><br>Monsters</h1>
@@ -209,56 +280,6 @@ They can enter and leave the center safe zone freely, but never deign to buy som
 <br>
 <img src="Manual_files/AHF5e9I.jpg" alt="" class="bbc_img">
 <br>
-
-
-            <h1 id="Items"><br>Items</h1>
-
-<p>Player characters can have equipped items that determine their combat abilities.
- Equipment can be bought by running over the tile of a merchant NPC.</p>
-
-<table>
-<tr valign="top"><td width="280"><span style="line-height:180%">Amulet/Ring of Word of Recall</span></td><td width="500">teleport to base, if failing morale check for 25 consecutive blocks (being chased by strong monster)</td></tr>
-<tr><td><span style="line-height:180%">Amulet of Life Saving</span></td><td>teleport to base *instead* of death<br>
-                                       this will destroy the amulet</td></tr>
-<tr><td><span style="line-height:180%">Ring of Immortality</span></td><td>teleport to base *instead* of death<br>
-                                       the ring is then automatically rebought, without discount</td></tr>
-
-<tr><td><span style="line-height:180%">Plate Mail</span></td><td>resist all damage effects if their strength < min(your character level, 3)<br>
-                                       -2 range penalty when using staves</td></tr>
-<tr><td><span style="line-height:180%">Splinted Mail</span></td><td>resist damage effects if their strength < min(your character level, 3)
-                                       but not effective against lightning<br>
-                                       -2 range penalty when using staves</td></tr>
-<tr><td><span style="line-height:180%">Scale Mail</span></td><td>resist damage effects if their strength < min(your character level, 3)
-                                       but not effective against lightning and fire<br>
-                                       -1 range penalty when using staves</td></tr>
-<tr><td><span style="line-height:180%">Linen Body Armor</span></td><td>resist damage effects if their strength < min(your character level, 3)
-                                       but not effective against lightning, poison and fire<br>
-                                       -1 range penalty when using staves</td></tr>
-<tr><td><span style="line-height:180%">Buff Coat</span></td><td>resist damage effects if their strength < min(your character level, 2)
-                                       but not effective against lightning, poison and fire<br>
-                                       no range penalty</td></tr>
-
-<tr><td><span style="line-height:180%">Amulet of Regeneration</span></td><td>If the wearer is converted into a monster, it will slowly regenerate and become a normal PC again,
-                                       (this process is halted when less than 1/3 of all characters are monsters)</td></tr>
-<tr><td><span style="line-height:180%">Amulet of Life Saving</span></td><td>teleport to base *instead* of death<br>
-                                       this will destroy the amulet</td></tr>
-</table>
-
-
-
-
-            <h1 id="Spells"><br>AI + spell packages (free items)</h1>
-
-<table>
-<tr valign="top"><td width="280"><span style="line-height:180%">Book of Conquest</span></td><td width="500">Standard setting for passing/failing morale check</td></tr>
-<tr><td><span style="line-height:180%">Book of Survival</span></td><td>Less overconfidence. Run away to fight another day</td></tr>
-<tr><td><span style="line-height:180%">Book of Resting</span></td><td>like Book of Survival, additionally recall to base if no order for new round was given</td></tr>
-<tr><td><span style="line-height:180%">Book of Mark and Recall</span></td><td>like Book of Resting, additionally:<br>
-                                       Memorize where you have been (the area). When order for new round was given,
-                                       teleport there, then walk to ordered target area.
-                                       (for teleportation, the area's marker flag must be same color, or white)</td></tr>
-</table>
-
 
 
 
@@ -312,9 +333,9 @@ If no ordered target area exists, the monster's current favorite area is used ("
 
 <p>All drinkables are delivered once per round with the rations, at no extra cost. Players can send their characters "on vacation" so that they don't need any upkeep. This is limited to 50000 characters.</p>
 <table>
-<tr valign="top"><td width="200"><span style="line-height:180%">Pazunia Sun Ale</span></td><td width="500">if failing morale check and choosing an area to retreat, don't go back to area ordered by player</td></tr>
-<tr><td><span style="line-height:180%">Pale Sweet Marrow</span></td><td>go back once<br>(aka Potion of Duty)</td></tr>
-<tr><td><span style="line-height:180%">Red Pit Ichor</span></td><td>while the order is in effect, keep going back until the area is cleared
+<tr valign="top"><td width="200"><span style="line-height:180%">Pazunia Sun Ale</span></td><td width="80"><img src="Manual_files/504_freedom.png" alt=""></td><td width="470">if failing morale check and choosing an area to retreat, don't go back to area ordered by player</td></tr>
+<tr><td><span style="line-height:180%">Pale Sweet Marrow</span></td><td><img src="Manual_files/506_duty.png" alt=""></td><td>go back once<br>(aka Potion of Duty)</td></tr>
+<tr><td><span style="line-height:180%">Red Pit Ichor</span></td><td><img src="Manual_files/505_fanatic.png" alt=""></td><td>while the order is in effect, keep going back until the area is cleared
                                        or you die or teleport out with Word of Recall<br>
                                        (aka Potion of Fanatism)</td></tr>
 </table>
