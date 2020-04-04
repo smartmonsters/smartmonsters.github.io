@@ -256,55 +256,56 @@
 
 
 
-			<h1 id="Synonyms"><br>Huntercoin-ish vocabulary</h1>
+			<h1 id="Synonyms"><br>Glossary</h1>
 
 <table>
 <tr valign="top"><th width="150"><span style="line-height:180%"><br>     </span><th width="140">Synonyms</th><th width="500">Definition</th></tr>
 
 <tr>
-<td><span style="line-height:180%">Playernameaddress</span></td>
+<td id="Player"><span style="line-height:180%">Player Character</span></td>
+<td>Player,<br>"General"</td>
+<td>A unit that was created with a new unique name. They are assets on the SmartMonster blockchain, are controlled by (the private key of) an address, like coins,
+and can be sent to another address just like coins. When we say "Players can do x" the meaning is that "owners of a Player Character can do x, but not coin holders. Coin holders can however create new PCs.</td>
+<tr>
+<td id="Nameaddress"><span style="line-height:180%">Playernameaddress</span></td>
 <td>Name Address</td>
-<td>When a new Player Character (who has a new, unique name) is created, an amount of coins
+<td>When a new Player Character with unique name is created, an amount of coins
                                      is locked under this address, and a data field of 1 constant string and 1 variable string ("Name", "Value")
-                                     is created in the blockchain, containing the PC's name, and all moves of that player.</td>
+                                     is created in the blockchain, containing the PC's name, and all moves of that player.
+Locked Coins are refunded if the PC <a href="Manual5.html#Bank">dies on the spawnstrip.</a></td>
 </tr>
 <tr>
-<td><span style="line-height:180%">General</span></td>
-<td>Player,<br>Hunter</td>
-<td>One of the aforementioned Player Characters with unique names.</td>
+<td id="Bank"><span style="line-height:180%">Bank</span></td>
+<td>Spawnstrip</td>
+<td>Banking means stepping on one of the colored tiles in the 4 map corners.<br>
+                                     This will send all looted coins to the wallet (i.e. player's reward address, or name address if no reward address exists)
+                                     and the unit's character level is reset to 1. If a unit is staying on the spawnstrip for 30 blocks, it dies and all locked coins are sent to the wallet too.<br>
+                                     Reward address and Name address can be set with "Config..." button.></td>
 </tr>
 <tr>
-<td><span style="line-height:180%">Heart Soldier</span></td>
-<td>Character,<br>Hunter</td>
-<td>Additional characters can be gained by running over a heart. These chars don't have unique names
-                                     and don't need coins to be created.</td>
+<td><span style="line-height:180%">Heart Soldiers</span></td>
+<td></td>
+<td>Additional units can be gained by running over a heart. These units don't have unique names
+                                     and don't need coins to be created. They die if their General dies.</td>
 </tr>
 <tr>
 <td><span style="line-height:180%">Heart</span></td>
 <td>    </td>
-<td>Now spawning semi-randomly near coins, and only in combat zones where movement is automatic<br>
+<td>They spawn semi-randomly near coins, and only in combat zones where movement is automatic<br>
                                      (so no one can farm them manually or with a bot)</td>
 </tr>
 <tr>
 <td><span style="line-height:180%">Transfer</span></td>
 <td>     </td>
 <td>Generals can be transferred to a new address, taking all their Heart Soldiers with them.<br>
-                                     Useful for sending PCs to a new wallet.</td>
+                                     Useful for sending unit to a new wallet.</td>
 </tr>
 <tr>
-<td><span style="line-height:180%">Color</span></td>
-<td>Team,<br>Faction</td>
+<td id="Color"><span style="line-height:180%">Color</span></td>
+<td>Color Team,<br>Color Faction</td>
 <td>All characters are either on yellow, red, green or blue.<br>
                                      There is generally no team damage (can't hurt members of same color, not even monsters)<br>
-                                     In combat zones, all characters will now automatically attack other colors, or flee from them if outmatched.</td>
-</tr>
-<tr>
-<td><span style="line-height:180%">Bank</span></td>
-<td>Spawnstrip</td>
-<td>Banking means stepping on one of the colored tiles in the 4 map corners.<br>
-                                     This will send all looted coins to the wallet (i.e. player's name address or reward address)
-                                     and the PC's character level is reset to 1.<br>
-                                     Reward addresses can be set with "Config..." button.</td>
+                                     In combat zones, all units will automatically attack other colors, or flee from them if outmatched.</td>
 </tr>
 <tr>
 <td><span style="line-height:180%">Gamestate</span></td>

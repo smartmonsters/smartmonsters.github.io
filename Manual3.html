@@ -167,27 +167,35 @@
 
 
 
-			<h1 id="Voting1">NPC Merchants</h1>
+			<h1 id="NPCs">NPC Merchants</h1>
 			<p>They can't be controlled by anyone, only obey network rules and are generally immortal. For added security, on mainnet before release,
 all NPCs would be transferred to a coin-eater address.</p>
 
 <p>Merchants earn coins when players buy items. After a while, coins from that cash flow accumulates and the "organization of all players" can choose to spend them (or burn them) through majority vote.</p>
 
+<p>The currently richest NPC handles bounty requests.</p>
 
 
 			<h1 id="Voting1"><br>Bounty and voting system</h1>
 
-<p>Any player can request that all players vote of whether a specified bounty is granted. Format (console command):</p>
+<p>Any <a href="Manual5.html#Player">player</a> can request that all players vote of whether a specified bounty is granted, and optionally pay a fee while making the request. Every 10000 blocks (about 1 week), one voting request is possible.
+In case of 2 or more competing requests, the network chooses the request with the highest fee, and it goes into voting. The voting will then be open for the next 10000 blocks.</p>
+
+<p>Example: Alice seeks to request a bounty of 1000 coin, and pay a fee of 20 coins. If not specified, the fee would be 1% of the requested amount.
+To submit the request, type the following command in the Debug Window Console:</p>
 
 <table>
 <tr><td><font color=blue>name_update Alice {\"msg_request\":\"1000\",\"msg_fee\":\"20\",\"msg_comment\":\""some text, perhaps link to forum post"\"}</font></td></tr>
 </table>
 
-<p><br>In this example, Alice requests that a NPC sends 1000 coins to hunter Alice. If not specified, the fee is 1% of the requested amount.
- Note the extra quotes in msg_comment, they are needed if the text contains any spaces.</p>
-<p>The fee is paid immediately to the NPC. Alice will get <a href="Manual2.html#Upkeep">rations</a> for it, so that the fee slowly refunds itself.</p>
-<p>Every 5 rounds (10000 blocks) the network chooses the request with the highest fee, and it goes into voting,
- which also lasts 10000 blocks. To vote yay:</p>
+<p><br>Note the extra quotes in msg_comment, they are needed if the text contains any spaces.</p>
+
+<p>The wallet must control a player character named Alice that carries enough coins to afford the specified fee. Alice will get <a href="Manual2.html#Upkeep">rations</a> in return for the fee, so that it's slowly refunded.</p>
+
+
+			<h4 id="VotingHowto"><br><br>How to cast a vote</h4>
+
+<p><br>To vote yay (on a bounty request of 1000 coins), Bob would type in the Debug Window Console::</p>
 
 <table>
 <tr><td><font color=blue>name_update Bob {\"msg_vote\":\"1000\"}</font></td></tr>
@@ -205,7 +213,10 @@ all NPCs would be transferred to a coin-eater address.</p>
 or the requested amount, then the actual bounty is the median (otherwise the average)</p>
 
 <p>Voters are rewarded with 3 rations, plus 2 rations for each heart soldier. The "soft" population limit imposed by the price per ration
-would be doubled if all players vote regularly.</p>
+is doubled if all players vote regularly.</p>
+
+<p>For above example the wallet must control a player named Bob. Per player character with unique name ("General"), 1 vote can be casted,
+with weight proportional to all coins carried by units with same name ("Heart Soldiers"). Normal wallet balance doesn't add to the weight.</p>
 
 
 
