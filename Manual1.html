@@ -170,12 +170,12 @@
 
 <p>It can <a href="Manual4.html#POW">mine coins for the testnet.</a> Mined coins must mature for 120 blocks before they can be used.</p>
 
-<p>The default data folder on Windows can be found at "...\<i>username</i>\AppData\Roaming\SmartMonsters\testnet_beta". It contains blockchain and config file for online play.</p>
+<p>Default data folder on Windows can be found at "...\<i>username</i>\AppData\Roaming\SmartMonsters\testnet_beta". It contains blockchain and config file for online play.</p>
 
 
 			<h1><br>Starting a new character</h1>
 
-<p>Click "New" button, and choose a name and a color. Creating a new character is a transaction -- after it has confirmed in the blockchain, the new char appears on the map.</p>
+<p>Click "New" button, and choose name and color. Creating a new character is a transaction -- after it has confirmed in the blockchain, the new char appears on the map.</p>
 
 <br><img src="Manual_files/Ace1.jpg" alt="" class="bbc_img"><br>
 
@@ -204,59 +204,37 @@
 <br><img src="Manual_files/Ace4.jpg" alt="" class="bbc_img"><br>
 
 
-<p>The center and the 4 color bases are safe zones, combat is not possible here.
- Players of other colors can't walk across the base perimeter (the tiles marked on map are still within the safe zone).</p>
+<p>Center and the 4 color bases are safe zones, combat is not possible here.
+ Players of other colors can't walk across the base perimeter (tiles marked on map are still within the safe zone).</p>
 
 <br><img src="Manual_files/orVZMr9.jpg" alt="" class="bbc_img">
 
 
             <h1 id="Movement"><br>Movement in safe zones</h1>
 
-<p>To move, set a path to any destination with a mouse click or ctrl-click to queue several destination, then press "Go" button. Moving is a transaction -- the path will change from grey to purple after it has confirmed in the blockchain.</p>
+<p>To move, set a path to any destination with a mouse click, then press "Go" button. Moving is a transaction -- the path will change from grey to purple after it has confirmed in the blockchain.</p>
 
 <p>Four 2-way teleporters connect the center and the bases. 
  To teleport, stand still on the bright glowing tile.</p>
 
-<br><img src="Manual_files/Ace13.jpg" alt="" class="bbc_img">
+<br><img src="Manual_files/Ace13.jpg" alt="" class="bbc_img"><br>
 
-<p>New characters don't own coins but can get free items from some <a href="Manual3.html#NPCs">merchant NPCs</a>. Hold down Ctrl button and click on the NPCs to queue a shopping tour and back to the teleporter, then  press "Go".</p>
+<br><p>New characters don't own coins but can get free items from some <a href="Manual3.html#NPCs">merchant NPCs</a>.</p>
 
-<br><img src="Manual_files/Ace15.jpg" alt="" class="bbc_img"><br>
+<p>To save time, use ctrl-click (Ctrl button + left mouse button) to queue several destinations, then  press "Go".</p>
+
+<img src="Manual_files/Ace15.jpg" alt="" class="bbc_img"><br>
 
 
-            <h1><br>Strategic movement orders (works everywhere)</h1>
+            <h1><br>Strategic travel orders (Movement outside safe zones)</h1>
 
-<p>Find a place with some coins that is nearby and doesn't look too dangerous. Click near the flagpole, then press "Go" button</p>
+<p>It's not possible to "manually" step outside of a safe zone. All movement outside of safe zones is delayed.</p>
+
+<p>Interesting areas have a flagpole as area marker. To go there, click near the flagpole, then press "Go" button</p>
+
+<p>Travel orders to (but not from) battlefield areas are irrevocable.</p>
 
 <br><img src="Manual_files/Ace5.jpg" alt="" class="bbc_img"><br>
-
-<p>However, it's not possible to "manually" step outside of a safe zone.</p>
-
-<br><img src="Manual_files/Ace10.jpg" alt="" class="bbc_img"><br>
-
-<p>If the end point of your path
- was within 12 tiles distance to a flag pole, this area becomes the ordered target area for next round. (1 round == 2000 blocks)</p>
-
-<p>If the order was given less than 1000 blocks before the old round ended, it may not be effective for the new round,
- and will only go into effect 1 round later. (500 blocks = 50% chance, 250 blocks = 25% chance, and so on). This is to balance the disadvantage of
- sending your move before knowing other player's moves.</p>
-
-<p>Ace has to wait 1624 blocks, we're done playing for today (and can close the Smartmonsters client)</p>
-
-
-            <h1><br>Movement outside safezones</h1>
-
-<p>Movement orders to battlefield areas are irrevocable. This sort of movement, and fights between characters are always AI controlled.</p>
-
-<p>Combat results depend only on character equipment and tactical situation.
-You can see movement orders of all players in the character list (stats_characters.html).</p>
-
-<br><img src="Manual_files/Ace19.jpg" alt="" class="bbc_img"><br>
-
-<p>Ace has now collected some coins and created 5 additional Aces. If we order him back to base now, he will continue collecting coins until next round begins. On the other hand, Ace1, Ace2 etc are already in a safe zone, so we can move them right away.</p>
-
-<br><img src="Manual_files/Ace20.jpg" alt="" class="bbc_img"><br>
-
 
 
 
@@ -291,18 +269,22 @@ You can see movement orders of all players in the character list (stats_characte
 
 
 
-            <h1 id="Strategy"><br>Basic Strategy</h1>
+            <h1 id="Strategy"><br>Basic Strategy for new characters</h1>
 
-<p>It makes sense to visit the center first and get some free items, most notably the Amulet of Word of Recall. Then set path to one of the coins-spawning areas.
-Choose wisely: once the characters leave safe zone, they are on their own and players can't be allowed to babysit them. The point of this game is really to predict the outcome of battles and to send your guys to fight on the winning side, preferably where the losing side is at risk of annihilation rather than mere rout.<p>
+<p>First set path to one of the coins-spawning areas (character AI will memorize this and go there later),
+then take a detour to visit the map center via teleporter and get some free items.
+When done, feel free to close the Smartmonsters wallet (travel to the coins-spawning areas and fights between characters are always AI controlled and automatic).<p>
 
-<p>When a new block is received, the node compiles a list with the queued Strategic Movement Orders of all players. It is most informative around mid-round,
-when 1000 blocks are left until a new round begins, and the chance of newly submitted (strategic) moves to be active next round is starting to drop from 100%. Which coin spawning area is not under attack
+<p>You can see orders of all players in the character list (stats_characters.html). It is most informative around the middle of a game round,
+when the chance of newly submitted orders to be active next round is starting to drop from 100%. Which coin spawning area is not under attack
 and also not overcrowded?<p>
 
-<p>Going into the combat zone from the map center is more dangerous than from your own base, easy to get sandwiched between groups of hostiles.
+<p>Choose wisely where to go: outside of safe zones, every unit is on their own.
+Combat results depend only on character equipment and tactical situation. The point of this game is really to predict the outcome of battles and to send your guys to fight on the winning side, preferably where the losing side is at risk of annihilation rather than mere rout.<p>
+
+<p>Going into the combat zone from map center is more dangerous than from your own base, easy to get sandwiched between groups of hostiles.
 However, when a new round begins, all characters of the same color (both PCs and monsters) get a 100 block time window to leave the center towards their own sector of the combat zone, making it slightly less dangerous
-(Other colors will automatically wait, and then get 20-block-timewindows per color so that everyone can leave the center in the direction they want.<p>
+(Other colors will automatically wait, and then get 20-block-time-windows per color so that everyone can leave the center in the direction they want.<p>
 
 
 
