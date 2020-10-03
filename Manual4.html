@@ -167,7 +167,7 @@
 
             <h1><br>Windows Qt-Client</h1>
 
-<p><a href="https://mega.nz/file/7FcFhSob#oT_m3oyYpFMnyiScyVR4_T7G-iTm3iPQHi7Tl23Gn3E">SmartMonsters-beta-2.2.07b-20200804.zip</a></p>
+<p><a href="https://mega.nz/file/SA9zhQhR#3W4VvH_H545OMAaNwyQbcbR0j1sXmd0fTXn59xRK17Y">SmartMonsters-beta-2.2.08f-20200930.zip</a></p>
 
 
             <h1><br>Source (SmartMonsters wallet)</h1>
@@ -180,12 +180,18 @@
 <p><a href="https://github.com/smartmonsters/alifecore">https://github.com/smartmonsters/alifecore</a></p>
 
 
-            <h1 id="POW"><br>POW mining for testnet</h1>
+            <h1 id="POW"><br>Coin specs and POW mining for testnet</h1>
+
+<p>Block time: 1 minute<br>
+Address format: compatible with bitcoin, mainnet addresses start with "1"<br>
+Default port: 8396 (testnet 18396), RPC port: 8397 (testnet 18397), Core wallet RPC port: 8395 (testnet 18395)<br>
+Block reward: initially 10 coins/block, halving every 4 years
+</p>
+
+<br><img src="Manual_files/coin_distribution.jpg" alt="" class="bbc_img"><br>
 
 <p>Testnet POW mining can be done from within the Qt-client: in Debug Window, use "setgenerate true" to start mining, and "setgenerate false" to stop. To switch from default algo sha256 to scrypt, put "algo=scrypt" in smartmonsters.conf.
 POW mining is needed to generate blocks, the game can't do this, even if it generates most of the coins.</p>
-
-<br><img src="Manual_files/coin_distribution.jpg" alt="" class="bbc_img"><br>
 
 
             <h1 id="Changelog"><br>Addendum (v2.2.05 - 2.2.07)</h1>
@@ -213,8 +219,22 @@ Everyone can enter, but higher level chars will be temporarily reduced to level 
 
             <h1 id="Wishlist"><br>Wishlist</h1>
 
-<p>Too long to put here...</p>
+<p>In order to own assets outside of its blockchain, the DAO will need trusted workers, who are paid via the <a href="Manual3.html#Voting1">Bounty and voting system</a>,
+and who can post collateral to the DAO.</p>
 
+<p>Features adapted from 'BetterQT wallet for Huntercoin' (<a href="https://mega.nz/file/uQEnGazB#eKhnLSqlO51m2PsM5Tel8LCWsZNgTrHrmmWqnLAJN1o">Testnet in a box here</a>):<br>
+- A decentralized oracle that allows all players to participate and get rewarded.<br>
+- Creation of at least one fiat-pegged stablecoin backed by coins as collateral that can be traded from within the game.<br>
+- A combination of p2p and peer2contract trading, with zero or very low fees.<br>
+- The "contract" would take the form of an AI controlled market maker that is part of the coin's consensus.<br>
+- A link between the voting system (that is also part of the consensus) and the AI market maker with the goal of reducing volatility.
+</p>
+
+<p>More power to the voting system:<br>
+- Control the overall randomness. Should the game play like a simulationist RPG or a deterministic super-chess?<br>
+- Balance of all players vs all monsters. More and stronger monster is a way to make coins scarcer, but there would be more loot...<br>
+- Other possibilities are the choice to allow/disallow merge mining, to pause/resume the entire game, and many more.
+</p>
 
 		</div>
 	</div>
